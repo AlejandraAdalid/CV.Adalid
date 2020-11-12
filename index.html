@@ -9,11 +9,35 @@
     <title>Columnas</title>
     <link rel="stylesheet" href="columnas.css">
 
+   
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.2.617/styles/kendo.default-v2.min.css" />
+    <script src="https://kendo.cdn.telerik.com/2020.2.617/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.617/js/kendo.all.min.js"></script>
+
+    <base href="https://demos.telerik.com/kendo-ui/qrcode/index?autoRun=true&theme=material-v2">
+
     <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.2.617/styles/kendo.common.min.css" />
-  <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.2.617/styles/kendo.default.min.css" />
-  <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.2.617/styles/kendo.default.mobile.min.css" />
-  <script src="https://kendo.cdn.telerik.com/2020.2.617/js/jquery.min.js"></script>
-  <script src="https://kendo.cdn.telerik.com/2020.2.617/js/kendo.all.min.js"></script>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.2.617/styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.2.617/styles/kendo.default.mobile.min.css" />
+   <!--
+    <script src="https://kendo.cdn.telerik.com/2020.2.617/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.617/js/kendo.all.min.js"></script>
+   -->
+   <script src="https://kendo.cdn.telerik.com/2020.3.1021/js/jquery.min.js"></script>
+   <script src="https://kendo.cdn.telerik.com/2020.3.1021/js/kendo.all.min.js"></script>
+   <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.3.1021/styles/kendo.material-v2.min.css" />
+  
+   
+    
+    <!--[if lt IE 9]>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+
+
+
   </head>
 
   <body>
@@ -26,16 +50,19 @@
 
 
     <p style="color:#FF0000";><h1>Alejandra Adalid </h1></p> 
-
+    <div id="photo">
+			<img class="circular--square" src="file:///C:/xampp/htdocs/CV-master/images/foto.jpg" />
+			
+		</div>
+	  
      
-
-
+ 
 
 
      <div class="padre">
      
 
-      <div class="hijo"><img class="circular--square" src="foto.jpg"/></div>
+     
         
 
         <div class="hijo">
@@ -51,9 +78,9 @@
         <div class="hijo"><h3>Contacto</h3>
     
     
-            <small><span> <a href="mailto:AlejandraAdalid@protonmail.com"><img src="email.png"/></a></span></small>
-            <p><a href="https://api.whatsapp.com/send?phone=543413501908"><img src="whatsapp.jpeg"/></a><p>
-            <p><a href="https://www.linkedin.com/in/alejandraadalid/"> <img src="Linkedin.jpg"/></a><p>	
+            <small><span> <a href="mailto:AlejandraAdalid@protonmail.com"><img src="file:///C:/xampp/htdocs/CV-master/images/email.png"/></a></span></small>
+            <p><a href="https://api.whatsapp.com/send?phone=543413501908"><img src="file:///C:/xampp/htdocs/CV-master/images/whatsapp.jpeg"/></a><p>
+            <p><a href="https://www.linkedin.com/in/alejandraadalid/"> <img src="file:///C:/xampp/htdocs/CV-master/images/Linkedin.jpg"/></a><p>	
         </div>
       </div>
       
@@ -115,7 +142,7 @@
            <ol><iframe src="https://alejandraadalid.github.io/ConocimientosdeAdalid.github.io/" frameborder="0" scrolling="no"></iframe></ol>
         </ul>
      
-        <h2 style="border: 2px solid Tomato;">Curriculum Vitae y certificados </h2>
+        <h2 style="border: 2px solid Tomato;">Curriculum Vitae</h2>
 			
                             <p itemscope itemtype="http://schema.org/Article">
                             <span itemprop="name">
@@ -133,21 +160,33 @@
                                   
     </section>
    
-     <script>
-			$.getJSON( "ajax/grupocilsa.json", function( data ) {
-			var Colegas = [];
+  
+
+      <section id="colegas"></section>
+      <h2 style="border: 2px solid Tomato;">Colegas</h2>
+
+      
+    <script>
+      // LEER COLEGAS
+      $.getJSON( "grupocilsa.json", function( data ) {, function( data ) {
+			var colegas = [];
 			$.each( data, function( key, val ) {
-			Colegas.push( "<li id='" + key + "'>" + val + "</li>" );
+			  colegas.push( "<li id='" + key + "'> " + val + "</li>" );
 			});
 		   
 			$( "<ul/>", {
 			  "class": "my-new-list",
-			  html: Colegas.join( "" )
+			  html: colegas.join( "" )
 			}).appendTo( "body" );
 		  });
-
-		</script>
     
+    </script>
+    
+ 
+</section>
+</div>
+
+		
 
 
 
