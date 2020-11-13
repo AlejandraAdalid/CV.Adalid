@@ -165,22 +165,23 @@
       <section id="colegas"></section>
       <h2 style="border: 2px solid Tomato;">Colegas</h2>
 
-      
-    <script>
-      // LEER COLEGAS
-      $.getJSON( "https://alejandraadalid.github.io/CV.Adalid/ajax/grupocilsa.json", function( data ) {, function( data ) {
-			var colegas = [];
-			$.each( data, function( key, val ) {
-			  colegas.push( "<li id='" + key + "'> " + val + "</li>" );
-			});
-		   
-			$( "<ul/>", {
-			  "class": "my-new-list",
-			  html: colegas.join( "" )
-			}).appendTo( "body" );
-		  });
-    
-    </script>
+      <script>
+        // LEER COLEGAS
+        $.getJSON( "https://alejandraadalid.github.io/CV.Adalid/ajax/grupocilsa.json", function( data ) {
+        var colegas = [];
+        $.each( data, function( key, val ) {
+          colegas.push( "<li id='" + key + "'> " + val + "</li>" );
+        });
+         
+        $( "<ul/>", {
+          "class": "my-new-list",
+          html: colegas.join( "" )
+        }).appendTo( "body" );
+        });
+  
+      </script>
+  
+  
     
  
 </section>
