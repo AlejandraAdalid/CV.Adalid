@@ -1,0 +1,19 @@
+.padre {
+  /* IMPORTANTE */
+  text-align: center;
+}
+
+.hijo {
+  background-color: rgb(245, 245, 245);
+  padding: 100px;
+  margin: 10px;
+  
+  /* IMPORTANTE */
+  display: inline-block;
+}
+.circular--square {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
