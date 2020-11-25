@@ -1,21 +1,26 @@
-const Estudios = [{
-   Puesto: "Administrativa" ,
-    Rubro : "Comercio/ Hardware -Computadoras" ,
-    Lugar : "Dorrego 069, Rosario" ,
-    Fecha : "2017-2019",
+const estudios = [{
+    Estudios : "Programación" ,
+    LugarDeEstudio : "CILSA O.N.G" ,
+    Inicio : "Marzo - 2020" ,
+    Fin : "Actualmente",
 },
 {
-    Puesto: "Encargada de Salón y Cocina" ,
-    Rubro : "Restaurante “La Pirucha” " ,
-    Lugar : "Cafferata 1197, Rosario" ,
-    Fecha : "2016-2017",
+    Estudios : "IT Essentials " ,
+    LugarDeEstudio : "Cisco Networking Academy" ,
+    Inicio : "Septiembre - 2020" ,
+    Fin : "Noviembre- 2020",
 },
 {
-    Puesto: "Enseñanza" ,
-    Rubro : "Plataforma educativa " ,
-    Lugar : "Online" ,
-    Fecha : "2014-2015",
+    Estudios : "Introducción a la programación con Python" ,
+    LugarDeEstudio : "Coursera Buenos Aires " ,
+    Inicio : "Septiembre - 2020" ,
+    Fin : "Septiembre - 2020",
 },
-
+{
+    Estudios : " Desarrollo de software" ,
+    LugarDeEstudio : "Esc. Urquiza" ,
+    Inicio : "Marzo - 2020" ,
+    Fin : "Actualmente",
+}
 ];
 
