@@ -1,59 +1,38 @@
 $(document).ready(function () {
 
     $("#qrMail").kendoQRCode({
-        value: "emilianomayerviegas@gmail.com",
-        size: 120,
-        border: {
+        value: "mailto:AlejandraAdalid@protonmail.com",
+        size: 90,
         color: "#e15613",
-        background: "transparent",
-        width: 5
-
-        }
+        background: "transparent"
     });
 
-    $("#qrLinkedin").kendoQRCode({
-        value: "https://www.linkedin.com/in/emiliano-mayer-viegas-03a0a41b2/",
+    $("#qrUrl").kendoQRCode({
+        value: "https://github.com/AlejandraAdalid/CV.Adalid",
         errorCorrection: "M",
-        size: 120,
+        size: 90,
         border: {
-            color: "rgb(14, 0, 209)",
+            color: "#000000",
             width: 5
         }
     });
 
-    $("#qrCelular").kendoQRCode({
-        value: "Cel:+5493465405225",
+    $("#qrTelephone").kendoQRCode({
+        value: "tel:+54-3413501908",
         errorCorrection: "Q",
-        size: 120,
+        size: 90,
+        color: "#67a814",
         border: {
             color: "#67a814",
             width: 5
         }
     });
 
-    $("#qrGithub").kendoQRCode({
-        value: "https://github.com/Emimayerk",
+    $("#qrGeoLocation").kendoQRCode({
+        value: "geo:-33.0063045,-60.671798,16z",
         errorCorrection: "H",
-        size: 120,
-        border: {
-        color: "rgb(115, 0, 165)",
-        width: 5
-
-        }
-
-
-    });
-
-    $("#qrPortfolio").kendoQRCode({
-        value: "https://emimayerk.github.io/demo-web-inmo-cilsa/",
-        errorCorrection: "M",
-        size: 120,
-        border: {
-        color: "rgb(79, 211, 255)",
-        width: 5
-
-        }
-
-
+        size: 90,
+        color: "#166a83"
     });
 });
+
