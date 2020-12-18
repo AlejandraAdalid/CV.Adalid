@@ -2,7 +2,7 @@ const estudios = [{
     Estudios : "Programación" ,
     LugarDeEstudio : "CILSA O.N.G" ,
     Inicio : "Marzo - 2020" ,
-    Fin : "Actualmente",
+    Fin : "Diciembre - 2020",
 },
 {
     Estudios : "IT Essentials " ,
